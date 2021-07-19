@@ -96,6 +96,12 @@ body{
     margin-top:5rem;
     border-radius: 3px;
     font-weight: 900;
+    transition: 0.3s ease;
+}
+.reset-btn:hover{
+    color:hsl(185, 100%, 5%);
+    border: none;
+    background-color: hsl(172, 100%, 51%);
 }
 .dol-2{
     
@@ -127,11 +133,24 @@ body{
  
 }
 .custom-button{
-    color:hsl(186, 14%, 43%);
+    color:hsl(0, 0%, 0%);
     background-color: hsl(189, 41%, 97%);
-    font-weight: 700;
+    font-weight: 900;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+button{
+    transition: 0.3s ease;
 
 
+}
+button:hover{
+    color:hsl(183, 100%, 15%);
+    font-weight: 900;
+  
+    background-color: hsl(172, 67%, 45%);
 }
 ::placeholder { 
     font-weight: 700;

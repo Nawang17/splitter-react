@@ -8,8 +8,9 @@ const Main = ({setbill, settipper,setpeople,total, tip,totalnum, tipamount ,tipP
             <div className="left-container">
                <h3 className='text-first bill'>Bill</h3>
                <form className='first-form' >
-                  <input  onChange ={(event)=>{
+                  <input onChange ={(event)=>{
      setbill(event.target.value)}} className='first-input first'type='number' placeholder="$"/>
+  
                </form>
                <h3 className='text-first'>Select Tip %</h3>
                <div className="buttons">
@@ -19,8 +20,7 @@ const Main = ({setbill, settipper,setpeople,total, tip,totalnum, tipamount ,tipP
                   }}   className='percent-button'>15%</button>
                   <button onClick={(event)=>{
                       settipper(18)
-                     
-                    
+                      
                      
                  
                   }}  className='percent-button'>18%</button>
@@ -67,6 +67,7 @@ const Main = ({setbill, settipper,setpeople,total, tip,totalnum, tipamount ,tipP
                       settipper(0)
                       setbill(0)
                       setpeople(0)
+                 
             
                     
 
