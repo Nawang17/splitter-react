@@ -14,7 +14,7 @@ const Main = ({
     <div className="main-container">
       <div className="left-container">
         <h3 className="text-first bill">Bill</h3>
-        <form className="first-form">
+        <form id="delete-form" className="first-form">
           <input
             onChange={(event) => {
               setbill(event.target.value);
@@ -66,23 +66,27 @@ const Main = ({
           >
             30%
           </button>
-          <input
-            onChange={(event) => {
-              settipper(event.target.value);
-            }}
-            className="custom-button percent-button"
-            type="number"
-            placeholder="Custom"
-          />
+          <form id="delete2-form">
+            <input
+              onChange={(event) => {
+                settipper(event.target.value);
+              }}
+              className="custom-button percent-button"
+              type="number"
+              placeholder="Custom"
+            />
+          </form>
         </div>
         <h3 className="text-first">Number of People</h3>
-        <input
-          onChange={(event) => {
-            setpeople(event.target.value);
-          }}
-          className=" first people"
-          type="number"
-        />
+        <form id="delete3-form">
+          <input
+            onChange={(event) => {
+              setpeople(event.target.value);
+            }}
+            className=" first people"
+            type="number"
+          />
+        </form>
       </div>
       <div className="right-container">
         <div className="rightmain">
@@ -107,6 +111,9 @@ const Main = ({
             settipper(0);
             setbill(0);
             setpeople(0);
+            document.getElementById("delete-form").reset();
+            document.getElementById("delete2-form").reset();
+            document.getElementById("delete3-form").reset();
           }}
           className="reset-btn"
         >
