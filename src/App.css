@@ -88,6 +88,7 @@ body {
   border-radius: 3px;
   font-weight: 900;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 .reset-btn:hover {
   color: hsl(185, 100%, 5%);
@@ -118,6 +119,7 @@ body {
   padding: 5px 10px;
   background-color: hsl(183, 100%, 15%);
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
 .custom-button {
   color: hsl(0, 0%, 0%);
